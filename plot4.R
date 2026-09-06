@@ -22,7 +22,7 @@ plot4 <- function() {
   axis.POSIXct(1, at = seq(min(data$DateTime), max(data$DateTime)+24*3600, by = "day"), format = "%a")
   lines(data$DateTime, data$Sub_metering_2, col = "red")
   lines(data$DateTime, data$Sub_metering_3, col = "blue")
-  legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "red", "blue"), lty = 1)
+  legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "red", "blue"), lty = 1, bty = "n")
   
   ## Top-right
   ## Voltage 
